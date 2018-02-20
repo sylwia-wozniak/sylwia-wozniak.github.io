@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: auto;
+  padding: 0; }
+
+a img {
+  border: none;
+  background: transparent; }
+
+body {
+  font-family: "Open Sans";
+  font-size: 14px; }
+  body.body--overlay {
+    height: 100vh;
+    overflow: hidden; }
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  display: none;
+  width: 100%;
+  height: 100%; }
+
+.header__container {
+  font-family: "Megrim";
+  font-size: 30px;
+  text-align: center;
+  vertical-align: top;
+  position: fixed;
+  width: 130px;
+  top: 10px;
+  right: calc(50% + 320px);
+  font-weight: bold;
+  color: #00a2ff;
+  letter-spacing: 0.1em;
+  line-height: 12px; }
+  .header__container::after {
+    content: "\A of my visualisation";
+    font-weight: normal;
+    white-space: pre-wrap;
+    font-family: "Poiret One";
+    font-size: 16px;
+    color: #cccccc;
+    letter-spacing: 0; }
+
+.up {
+  font-size: 80px;
+  font-family: "Megrim";
+  position: fixed;
+  bottom: -30px;
+  width: 130px;
+  right: calc(50% + 320px);
+  text-align: center;
+  color: #00a2ff;
+  text-decoration: none; }
+
+.main {
+  margin: 0 auto;
+  margin-top: 5px;
+  max-width: 600px;
+  text-align: center; }
+  .main .gallery {
+    display: none;
+    position: fixed;
+    font-family: "Poiret One";
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    height: 100vh;
+    width: 750px;
+    margin: 0 auto;
+    z-index: 30;
+    font-weight: lighter; }
+    .main .gallery .gallery__items {
+      position: relative;
+      height: 400px;
+      width: 750px;
+      top: 15%; }
+      .main .gallery .gallery__items--image {
+        position: absolute;
+        height: 400px;
+        top: 0;
+        width: 100%;
+        left: calc(50% - 450px);
+        z-index: 40; }
+      .main .gallery .gallery__items--close {
+        position: absolute;
+        top: 0;
+        right: 90px;
+        z-index: 50;
+        cursor: pointer; }
+      .main .gallery .gallery__items--left {
+        position: absolute;
+        z-index: 45;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        line-height: 50px;
+        top: 44%;
+        left: calc(50% - 450px); }
+      .main .gallery .gallery__items--right {
+        position: absolute;
+        z-index: 45;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        line-height: 50px;
+        top: 44%;
+        right: calc(50% - 300px); }
+      .main .gallery .gallery__items--left:hover, .main .gallery .gallery__items--right:hover {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        line-height: 50px;
+        top: 44%; }
+  .main .image__container {
+    position: relative;
+    width: 50%;
+    font-size: 0;
+    margin: 0 auto;
+    float: left;
+    overflow: hidden;
+    cursor: pointer; }
+    .main .image__container .image-text {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: calc(50% - 20px);
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      text-align: center;
+      font-family: "Poiret One";
+      font-size: 16px;
+      color: #00a2ff;
+      z-index: 20;
+      font-weight: bold; }
+    .main .image__container .frame {
+      display: none;
+      position: absolute;
+      border: 1px solid #00a2ff;
+      width: 95%;
+      height: 90%;
+      left: 0;
+      bottom: 5%;
+      right: 0;
+      margin: 0 auto;
+      z-index: 25; }
+    .main .image__container .image {
+      padding: 4px;
+      display: block;
+      overflow: hidden;
+      font-size: 0;
+      width: 100%;
+      margin: 0 auto;
+      transition: background-color 1s;
+      transition: transform 0.5s linear;
+      overflow: hidden; }
+    .main .image__container:hover .image {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      transform: scale(1.01);
+      opacity: 0.3; }
+    .main .image__container:hover .image-text {
+      display: block; }
+    .main .image__container:hover .frame {
+      display: block; }
+    .main .image__container--full {
+      width: 100%; }
+
+.footer__container {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  font-family: "Poiret One";
+  font-size: 14px; }
+
+@media screen and (max-width: 1023px) {
+  .header__container {
+    font-size: 30px;
+    right: 0;
+    top: 20px;
+    z-index: 10;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    line-height: 20px; }
+    .header__container::after {
+      color: #000000; }
+
+  .main {
+    text-align: center;
+    width: 600px;
+    margin-top: 100px; }
+    .main .gallery {
+      margin: 0 auto;
+      text-align: center;
+      left: 0;
+      right: 0;
+      width: 750px; }
+      .main .gallery .gallery__items {
+        width: 750px;
+        top: 5%; }
+        .main .gallery .gallery__items--image {
+          margin: 0 auto;
+          left: 0; }
+        .main .gallery .gallery__items--close {
+          right: 10px; }
+        .main .gallery .gallery__items--left {
+          left: 10px;
+          height: auto; }
+        .main .gallery .gallery__items--right {
+          right: 10px;
+          height: auto; } }
+@media screen and (max-width: 768px) {
+  .main .gallery {
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 100%; }
+    .main .gallery .gallery__items {
+      width: 100%;
+      top: 5%; }
+      .main .gallery .gallery__items--image {
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        height: auto; }
+      .main .gallery .gallery__items--left, .main .gallery .gallery__items--right {
+        top: 35%; }
+        .main .gallery .gallery__items--left:hover, .main .gallery .gallery__items--right:hover {
+          top: 35%;
+          border: 1px solid transparent; } }
+@media screen and (max-width: 750px) {
+  .main .image__container:hover .image {
+    filter: none;
+    transform: none;
+    opacity: 1; }
+  .main .image__container:hover .image-text {
+    display: none; }
+  .main .image__container:hover .frame {
+    display: none; } }
+@media screen and (max-width: 610px) {
+  .main {
+    width: 100%; }
+    .main .gallery .gallery__items--left, .main .gallery .gallery__items--right {
+      top: 25%; }
+      .main .gallery .gallery__items--left:hover, .main .gallery .gallery__items--right:hover {
+        top: 25%; } }
+@media screen and (max-width: 350px) {
+  .main {
+    width: 100%; }
+    .main .gallery .gallery__items--left {
+      left: 0; }
+    .main .gallery .gallery__items--right {
+      right: 0; }
+    .main .gallery .gallery__items--left, .main .gallery .gallery__items--right {
+      top: 20%; }
+      .main .gallery .gallery__items--left:hover, .main .gallery .gallery__items--right:hover {
+        top: 20%; } }
+
+/*# sourceMappingURL=build.css.map */

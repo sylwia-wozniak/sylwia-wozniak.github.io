@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: auto;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans";
+  font-size: 14px;
+  height: 100vh; }
+
+header {
+  margin-top: 7%;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-family: "Gugi";
+  text-align: center;
+  letter-spacing: 10px;
+  width: 100%;
+  animation: text ease-in-out 3s 1;
+  position: relative; }
+  header:after {
+    content: 'COLORS |';
+    color: #ffd800; }
+
+@keyframes text {
+  30% {
+    letter-spacing: 25px; }
+  85% {
+    letter-spacing: 10px; } }
+
+.question__container, .result {
+  width: 40%;
+  margin: 50px auto;
+  text-align: center; }
+  .question__container .question, .result .question {
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    font-family: "Poiret One";
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    height: 100px; }
+  .question__container .radio, .result .radio {
+    text-align: left;
+    font-size: 20px;
+    font-family: "Poiret One";
+    display: block;
+    padding: 5px 5px;
+    cursor: none; }
+    .question__container .radio:hover, .result .radio:hover {
+      color: #ff5f49;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: letter-spacing 0.5s; }
+      .question__container .radio:hover .material-icons, .result .radio:hover .material-icons {
+        color: #ff5f49; }
+    .question__container .radio .material-icons, .result .radio .material-icons {
+      color: #a7a7a7;
+      line-height: 30px;
+      vertical-align: bottom; }
+    .question__container .radio input, .result .radio input {
+      display: none; }
+  .question__container .progress, .result .progress {
+    margin: 50px 0;
+    height: 2px;
+    border-bottom: 1px solid #a7a7a7;
+    position: relative; }
+    .question__container .progress .progress-dot, .result .progress .progress-dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #49b8ff;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      transition: left .5s ease-out; }
+
+.result {
+  font-size: 20px;
+  font-family: "Poiret One";
+  position: relative;
+  margin: 0 auto; }
+  .result .color-name {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Gugi";
+    font-size: 20px;
+    top: 55px;
+    position: absolute;
+    right: calc(50% - 50px);
+    background-color: transparent;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.3);
+    overflow: hidden; }
+    .result .color-name .color-rec {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      right: calc(50% - 50px);
+      bottom: 0;
+      animation: result ease-in-out 1s 1;
+      z-index: -2; }
+  .result .red {
+    background-color: #ff5f49; }
+  .result .white {
+    background-color: #ededed; }
+  .result .blue {
+    background-color: #49b8ff; }
+  .result .green {
+    background-color: #c8e13f; }
+  .result .color-description {
+    margin-top: 150px;
+    margin-bottom: 50px; }
+
+@keyframes result {
+  0% {
+    bottom: -100px; } }
+
+.footer__container {
+  width: 35%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Poiret One";
+  font-size: 18px;
+  padding: 20px; }
+
+.cursor-in {
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: #ff5f49;
+  border-radius: 200px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  pointer-events: none;
+  will-change: transform;
+  display: none; }
+  .cursor-in--active {
+    display: block; }
+
+.cursor-out {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: transparent;
+  border: 2px solid #ff5f49;
+  border-radius: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.1s all ease;
+  -webkit-transition: 0.1s all ease;
+  -moz-transition: 0.1s all ease;
+  pointer-events: none;
+  will-change: transform;
+  display: none; }
+  .cursor-out--active {
+    display: block; }
+
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 40px; }
+  .question__container, .result {
+    width: 85%; }
+    .question__container .radio:hover, .result .radio:hover {
+      font-weight: normal;
+      letter-spacing: 0;
+      color: #000; }
+      .question__container .radio:hover .material-icons, .result .radio:hover .material-icons {
+        color: #a7a7a7; }
+  .cursor-in--active {
+    display: none; }
+  .cursor-out--active {
+    display: none; }
+  .footer__container {
+    width: 85%; } }
+
+@media screen and (max-width: 425px) {
+  header {
+    font-size: 35px; }
+  .question__container .question, .result .question {
+    height: auto; } }
+
+@media screen and (max-width: 320px) {
+  header {
+    font-size: 25px; } }

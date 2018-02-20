@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: auto;
+  padding: 0; }
+
+a img {
+  border: none;
+  background: transparent; }
+
+body {
+  font-family: "Open Sans";
+  font-size: 14px;
+  height: 100vh;
+  background: black;
+  background: -moz-radial-gradient(center, ellipse cover, black 0%, black 0%, #595959 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, black 0%, black 0%, #595959 100%);
+  background: radial-gradient(ellipse at center, black 0%, black 0%, #595959 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#595959',GradientType=1 );
+  margin: 0;
+  padding: 0; }
+
+#particles-js {
+  height: 100%;
+  width: 100%;
+  position: relative; }
+  #particles-js .header {
+    position: absolute;
+    top: calc(50% - 200px);
+    margin: auto;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Poiret One"; }
+    #particles-js .header .title {
+      font-family: "Poiret One"; }
+    #particles-js .header .subtitle {
+      font-size: 18px;
+      margin-top: 0px;
+      margin-bottom: 50px; }
+    #particles-js .header .start {
+      padding: 10px;
+      border: 1px solid #fff;
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer; }
+      #particles-js .header .start:hover {
+        color: #00a2ff; }
+  #particles-js #playground {
+    display: none; }
+    #particles-js #playground .score {
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+      display: block;
+      color: #fff;
+      font-family: "Poiret One";
+      font-size: 30px;
+      width: 100px; }
+    #particles-js #playground .timer {
+      position: absolute;
+      width: 100px;
+      bottom: 50px;
+      right: 10px;
+      display: block;
+      color: #fff;
+      font-family: "Poiret One";
+      font-size: 30px; }
+    #particles-js #playground .ball {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      opacity: 0.9;
+      background-color: #fff;
+      top: calc(50% - 25px);
+      left: calc(50% - 25px);
+      border: 2px solid transparent;
+      transition: all 0.3s ease-in-out; }
+      #particles-js #playground .ball:hover {
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid #00a2ff; }
+  #particles-js .final-score {
+    position: absolute;
+    display: none;
+    top: calc(50% - 80px);
+    left: calc(50% - 80px);
+    color: #fff;
+    font-family: "Poiret One";
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    width: 160px;
+    padding-top: 60px;
+    height: 160px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: all 0.5s; }
+    #particles-js .final-score:hover {
+      border-color: #00a2ff; }
+  #particles-js .new {
+    display: none;
+    font-family: "Poiret One";
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 50px);
+    font-weight: bold;
+    left: 0;
+    right: 0; }
+    #particles-js .new:hover {
+      color: #00a2ff; }
+
+/*# sourceMappingURL=build.css.map */

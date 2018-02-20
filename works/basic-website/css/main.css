@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.header{
+    background-color: rgb(240, 240, 240); 
+    height: 160px;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.title{
+    font-size:50px;
+    font-family:"Open Sans Condensed";
+    color:rgb(8, 8, 8);
+}
+h1 a {
+    text-decoration: none;
+    color:rgb(8, 8, 8);    
+}
+.subtitle{
+    font-size: 16px;  
+    font-family:"Poiret One";
+    color: rgb(141, 138, 138);
+    display: block;    
+}
+.nav {
+    background-color: rgb(240, 240, 240); 
+    font-family:"Poiret One";
+    font-size: 14px; 
+    font-style: oblique;
+    color: rgb(141, 138, 138);    
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.nav__item {
+    display: inline-block;
+    width: 120px;   
+}
+li a {
+    color:rgb(8, 8, 8);
+    display: inline-block;
+    text-decoration: none;
+}
+li a:hover {
+    opacity: 0.5;    
+}
+.button-heart-container:hover {
+    opacity: 1;
+    display: block;
+}
+.title-link {
+    height: 40px;
+    width: 100%;
+    display: block;
+    background-color: white;
+    padding-top: 20px;
+}
+.title-page {
+    font-family:"Open Sans Condensed";
+    font-size: 30px; 
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.photos-container {
+    padding-top: 4px;
+    width: 100%;
+    font-size:0;
+    text-align: center;
+    padding-bottom: 85px;
+}
+.photos-container-links {
+    padding-top: 100px;
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size:0;
+    text-align: center;
+    padding-bottom: 85px;
+    display: block;
+}
+
+@media screen and (min-width: 1980px) {
+    .photos-container {
+        width: 1980px;
+        margin: 0 auto;
+    }
+}
+.item {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    border: 4px solid white;
+    margin: 0;
+    position: relative;
+}
+.photo {
+    width: 100%;
+    margin:0;
+}
+.item:hover img {
+    opacity: 0.5;
+}
+.item:hover .button-heart-container {
+    opacity: 1;
+    display: block;
+}
+
+.button-heart-container .fa:before{
+    content:'\f08a';
+    color:#000;
+}
+.button-heart-container input{
+    display: none;
+}
+.button-heart-container input:checked ~.fa:before{
+    content:'\f004';
+    color:rgb(223, 60, 60);
+}
+.button-heart-container{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 20px;
+    z-index: 10;
+    display: none;
+}
+.contact-container {
+    height: 300px;
+    width: 100%;
+    display: block;
+    background-color: white;
+    padding-top: 20px;
+}
+.contact {
+    font-family:"Open Sans Condensed";
+    font-size: 30px; 
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.contact-text {
+    font-family:"Poiret One";
+    font-size: 14px; 
+    color: rgb(141, 138, 138);    
+    padding: 40px;
+    text-align: center;
+    display: block;
+}
+.contact-form {
+    display: block;
+    height: 450px;
+    text-align: center;
+}
+.form {
+    font-family:"Poiret One";    
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid rgba(207,207,207,1);
+    width: 200px;
+    margin-bottom: 12px;  
+}
+.form__item{
+	outline:none;
+}
+.form__item--name, .form__item--email {
+    font-family:"Poiret One";    
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid rgba(207,207,207,1);
+    margin-bottom: 12px;   
+    width: 200px;
+}
+.form__item--address {
+    font-family:"Poiret One";    
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid rgba(207,207,207,1);
+    width: 404px;
+    margin-bottom: 12px;
+}
+.form__item--message {
+    font-family:"Poiret One";    
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid rgba(207,207,207,1);
+    width: 404px;
+    height: 160px;
+    margin-bottom: 12px;
+    resize: none;
+}
+.btn__send {
+    font-family:"Poiret One";    
+    font-size: 18px;
+    padding: 8px;
+    border: 1px solid rgba(207,207,207,1);
+    width: 404px;
+    margin-bottom: 12px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255,255,255);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;   
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    bottom: 0; 
+    position: fixed;
+    height: 85px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 15px 0 0;
+}
+.by {
+    font-size: 15px;  
+    font-family:"Poiret One";
+    color: rgb(8, 8, 8);
+    display: block;
+}
+.media{
+    display: block;
+    position: relative;
+
+}
+.media-list {
+    color: black;
+    display: inline-block;
+    width: 40px;
+}
+
+
+
+

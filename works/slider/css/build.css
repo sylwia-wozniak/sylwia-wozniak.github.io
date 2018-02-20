@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: auto;
+  padding: 0; }
+
+body {
+  font-family: "Poiret One";
+  font-size: 16px; }
+
+.slider__container {
+  height: 100vh;
+  position: relative; }
+  .slider__container .img__container {
+    display: block;
+    height: 100vh; }
+    .slider__container .img__container .img-element {
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      display: none; }
+      .slider__container .img__container .img-element--1 {
+        background: url("https://picsum.photos/4000/2667?image=1052") center, center;
+        background-size: cover; }
+      .slider__container .img__container .img-element--2 {
+        background: url("https://picsum.photos/2508/1672?image=656") center, center;
+        background-size: cover; }
+      .slider__container .img__container .img-element--3 {
+        background: url("https://picsum.photos/6016/4000?image=1014") center, center;
+        background-size: cover; }
+      .slider__container .img__container .img-element--4 {
+        background: url("https://picsum.photos/3513/2635?image=671") center, center;
+        background-size: cover; }
+      .slider__container .img__container .img-element.active {
+        display: block; }
+  .slider__container .buttons__container {
+    position: absolute;
+    height: 100%;
+    z-index: 10;
+    width: 100%;
+    top: 0; }
+    .slider__container .buttons__container .button {
+      position: absolute;
+      outline: none;
+      border: none;
+      color: black;
+      background-color: transparent;
+      height: 100%;
+      width: 50px;
+      top: 0; }
+      .slider__container .buttons__container .button .fa {
+        font-size: 80px;
+        line-height: 80px;
+        position: absolute;
+        left: 0;
+        top: calc(50% - 80px);
+        padding-left: 10px;
+        padding-right: 10px; }
+      .slider__container .buttons__container .button:hover {
+        color: rgba(185, 185, 185, 0.9); }
+      .slider__container .buttons__container .button--left {
+        left: 0; }
+      .slider__container .buttons__container .button--right {
+        right: 0; }
+  .slider__container .slider__nav {
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    text-align: center; }
+    .slider__container .slider__nav .nav__item {
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      background-color: rgba(39, 39, 39, 0.7);
+      border-radius: 50%;
+      display: inline-block; }
+
+/*# sourceMappingURL=build.css.map */

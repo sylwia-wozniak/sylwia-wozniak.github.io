@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: auto;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans";
+  font-size: 14px; }
+
+.header {
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+  width: 100%; }
+  .header-title {
+    color: #cccccc;
+    font-family: "Poiret One";
+    font-size: 50px; }
+
+.task__container {
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 90%; }
+  .task__container .task-input {
+    display: inline-block;
+    font-family: "Poiret One";
+    font-size: 20px;
+    height: 67px;
+    padding: 20px;
+    text-align: center;
+    outline: none;
+    vertical-align: top;
+    width: 50%; }
+  .task__container .task-add {
+    background-color: #fff;
+    border: 1.5px solid #cccccc;
+    color: #52ddff;
+    cursor: pointer;
+    font-family: "Poiret One";
+    font-size: 60px;
+    display: inline-block;
+    height: 67px;
+    line-height: 67px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: meddium;
+    width: 67px; }
+    .task__container .task-add:hover {
+      background-color: #52ddff;
+      border: 1.5px solid transparent;
+      color: #fff; }
+  .task__container .alert-empty {
+    display: none; }
+  .task__container .alert-full {
+    display: none; }
+  .task__container--empty .task-input {
+    border: 1px solid #f57c69; }
+  .task__container--empty .alert-empty {
+    color: #f57c69;
+    display: block;
+    font-family: "Poiret One";
+    font-size: 15px;
+    left: calc(50% - 78px);
+    margin: 0 auto;
+    position: absolute;
+    top: 70px; }
+  .task__container--full .task-input {
+    border: 2px solid #f57c69; }
+  .task__container--full .alert-full {
+    color: #f57c69;
+    display: block;
+    font-family: "Poiret One";
+    font-size: 15px;
+    left: calc(50% - 78px);
+    margin: 0 auto;
+    position: absolute;
+    top: 70px; }
+
+.note__container {
+  font-size: 0;
+  height: auto;
+  margin: 20px auto;
+  text-align: center;
+  width: 90%; }
+  .note__container .note {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+    width: calc(25% - 20px);
+    border: 2px solid transparent; }
+    .note__container .note .note-text {
+      color: #cccccc;
+      font-family: "Poiret One";
+      font-size: 28px;
+      height: 85%;
+      padding: 25px 25px 25px;
+      overflow: hidden;
+      overflow-wrap: break-word;
+      position: absolute;
+      text-align: center;
+      vertical-align: middle;
+      width: 100%; }
+    .note__container .note .button {
+      bottom: 5px;
+      color: #cccccc;
+      cursor: pointer;
+      font-size: 30px;
+      position: absolute; }
+      .note__container .note .button--check {
+        left: 10px; }
+        .note__container .note .button--check:hover {
+          color: #c0e100; }
+      .note__container .note .button--star {
+        left: 50px; }
+        .note__container .note .button--star:hover {
+          color: #52ddff; }
+      .note__container .note .button--close {
+        right: 10px; }
+        .note__container .note .button--close:hover {
+          color: #000; }
+    .note__container .note--checked .note-text {
+      opacity: 0.7;
+      text-decoration: line-through; }
+    .note__container .note--checked .button--check {
+      color: #c0e100; }
+    .note__container .note--color {
+      border: 2px solid #52ddff; }
+      .note__container .note--color .button--star {
+        color: #52ddff; }
+    .note__container .note--close {
+      display: none; }
+
+.footer__container {
+  display: block;
+  font-family: "Poiret One";
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  width: 100%; }
+
+@media screen and (min-width: 1440px) {
+  .note__container {
+    width: 60%; } }
+
+@media screen and (max-width: 1025px) {
+  .task__container .task-input {
+    width: 70%; }
+  .note__container .note {
+    width: calc(33% - 20px); } }
+
+@media screen and (max-width: 769px) {
+  .note__container .note {
+    width: calc(50% - 20px); } }
+
+@media screen and (max-width: 426px) {
+  .task__container {
+    width: 100%; }
+    .task__container .task-input {
+      width: 70%; }
+  .note__container .note {
+    width: calc(100% - 20px); } }
