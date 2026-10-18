@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
   const menuIcons = document.querySelectorAll('.menu__icon');
-  const jsIcon = document.querySelector('.js-icon');
-  const resume = document.querySelector('.js-resume');
   const anchors = document.querySelectorAll('a[href^="#"]');
 
   menuIcons.forEach(function(icon) {
@@ -11,11 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     icon.addEventListener('mouseleave', function() {
       icon.classList.remove('menu__icon--open');
     });
-  });
-
-  jsIcon.addEventListener('click', function() {
-    resume.classList.toggle('icon--active');
-    resume.style.display = resume.style.display === 'block' ? 'none' : 'block';
   });
 
   anchors.forEach(function(anchor) {

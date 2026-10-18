@@ -483,6 +483,9 @@ body {
       font-size: 17.5px;
       top: 100px;
       left: calc(50% - 116.25px); }
+      .contact__container .contact .contact-info a {
+        color: inherit;
+        text-decoration: none; }
     .contact__container .contact .contact-button {
       position: absolute;
       background-color: #fff;
