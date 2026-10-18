@@ -486,6 +486,8 @@ body {
       .contact__container .contact .contact-info a {
         color: inherit;
         text-decoration: none; }
+        .contact__container .contact .contact-info a:hover {
+          color: #00d9ff; }
     .contact__container .contact .contact-button {
       position: absolute;
       background-color: #fff;
